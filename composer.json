@@ -1,0 +1,24 @@
+{
+  "name": "dungang/yii2-waypoints",
+  "description": "Waypoints is the easiest way to trigger a function when you scroll to an element. Jquery Plugin  ",
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "dun gang",
+      "email": "dungang@126.com",
+      "homepage": "https://github.com/dungang",
+      "role": "Creator"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "yiisoft/yii2": "~2.0.5",
+    "bower-asset/waypoints": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "dungang\\waypoints\\": ""
+    }
+  }
+}
