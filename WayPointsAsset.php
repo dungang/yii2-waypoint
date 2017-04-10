@@ -14,11 +14,16 @@ class WayPointsAsset extends AssetBundle
 {
     public $sourcePath = '@bower/waypoints/lib';
 
-    public $js = [
-        'jquery.waypoints.min.js',
-    ];
-
     public $depends = [
         'yii\web\JqueryAsset',
     ];
+
+    public function init()
+    {
+        if (YII_DEBUG) {
+            $this->js = ['jquery.waypoints.js'];
+        } else {
+            $this->js = ['jquery.waypoints.min.js'];
+        }
+    }
 }
